@@ -1,13 +1,10 @@
 # Deploy Link:
 
-https://bc44-final-project-team-11-e-learning.vercel.app/
 
 # Task Divisions:
-https://docs.google.com/spreadsheets/d/1psTtWmVaJ6uDLXUX8vQXv8et1pKYYr3Y/edit#gid=603007439
-
+https://docs.google.com/spreadsheets/d/1ytDv8OoPXPrphUoAnzaI050NPiUW6yT1YeLEj6V5yP0/edit?usp=sharing
 # Youtube video:
-https://www.youtube.com/watch?v=STYYaPQ1Yfw
-
+https://youtu.be/fZJxzT07vME
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
