@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  @apply text-sm text-stone-950 select-none bg-white scroll-smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: stonescale;
+}
+
+.container {
+  @apply px-5 mx-auto;
+}
+
+.btn {
+  @apply text-xs md:text-sm text-center font-medium py-2.5 px-4 xl:px-5 hover:shadow-md focus:outline-none cursor-pointer disabled:bg-stone-200 disabled:cursor-not-allowed disabled:hover:shadow-none transition-all;
+
+  &-one {
+    @apply p-1.5 sm:p-2 md:p-3;
+  }
+
+  &-pill {
+    @apply rounded-full;
+  }
+
+  &-default {
+    @apply rounded-lg;
+  }
+
+  &-totop {
+    @apply fixed bottom-6 right-6 z-40 hover:-translate-y-1 transition-all;
+
+    &__icon {
+      @apply w-5 h-5;
+    }
+  }
+
+  &-primary {
+    @apply bg-sky-500 text-white hover:bg-sky-400;
+  }
+
+  &-secondary {
+    @apply bg-stone-100 text-stone-950 hover:bg-stone-50;
+  }
+
+  &-accent {
+    @apply bg-amber-500 text-white hover:bg-amber-400;
+  }
+}
+
+.section {
+  @apply pb-16 pt-20 md:pb-20 md:pt-24 lg:pb-24 lg:pt-28;
+
+  &-header {
+    @apply flex flex-col w-full text-center mb-8 sm:mb-10 md:mb-12 lg:mb-14;
+  }
+
+  &-title {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold mb-4 text-sky-900;
+
+    &--onbg {
+      @apply text-white;
+    }
+
+    &__highlight {
+      @apply text-sky-400;
+    }
+  }
+
+  &-sub {
+    @apply mx-auto font-medium leading-relaxed lg:w-2/3 lg:text-base text-stone-600;
+
+    &--onbg {
+      @apply text-white;
+    }
+  }
+
+  &-devider {
+    @apply flex mt-6 justify-center;
+
+    &__stroke {
+      @apply w-16 h-1 rounded-full bg-sky-400 inline-flex;
+    }
+  }
+
+  &-action {
+    @apply flex justify-center mt-8 sm:mt-10 md:mt-12 lg:mt-14;
+  }
+}
+
+.course {
+  &-list {
+    @apply grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8;
+  }
+
+  &-item {
+    @apply h-full flex flex-col bg-white rounded-lg shadow-lg overflow-hidden hover:-translate-y-2 transition-all;
+  }
+
+  &-img {
+    @apply w-full lg:h-48 md:h-36 object-cover object-center bg-stone-100;
+  }
+
+  &-content {
+    @apply flex-auto p-6 flex flex-col justify-between;
+  }
+
+  &-info {
+    @apply font-medium;
+  }
+
+  &-sub {
+    @apply tracking-widest text-xs text-sky-500 mb-1;
+  }
+
+  &-title {
+    @apply text-lg text-stone-900;
+  }
+
+  &-detail {
+    @apply flex items-center flex-wrap;
+  }
+
+  &-price {
+    @apply font-medium text-green-500 inline-flex items-center md:mb-2 lg:mb-0;
+  }
+
+  &-comment,
+  &-view {
+    @apply text-amber-400 inline-flex items-center text-sm leading-none;
+  }
+
+  &-view {
+    @apply mr-3 lg:ml-auto md:ml-0 ml-auto pr-3 py-1 border-r-2 border-stone-200;
+  }
+
+  &-icon {
+    @apply w-4 h-4 mr-1;
+  }
+}
+
+.p-member {
+  @apply bg-stone-50;
+
+  &__row {
+    @apply flex;
+  }
+
+  &__col {
+    @apply w-full md:w-1/2;
+  }
+
+  &__pic {
+    @apply relative hidden md:block rounded-xl overflow-hidden;
+  }
+
+  &__welcome {
+    @apply absolute inset-0 grid place-items-center bg-stone-600 bg-opacity-40 text-base font-semibold text-white;
+  }
+
+  &__img {
+    @apply w-full h-full object-cover;
+  }
+
+  &__form {
+    @apply flex flex-col justify-center text-stone-800 px-4 md:px-8 lg:px-16;
+  }
+
+  &__title{
+    @apply text-xl font-semibold text-sky-900 text-center mb-4;
+  }
+
+  &__action {
+    @apply text-center pt-4;
+  }
+
+  &__btn {
+    @apply w-full sm:w-1/2 text-base;
+  }
+
+  &__external {
+    @apply text-stone-500 text-center mt-10;
+  }
+
+  &__link {
+    @apply text-blue-400 hover:text-blue-500 font-medium;
+  }
+
+  &__label {
+    @apply block mb-2 text-sm font-medium text-stone-900;
+  }
+
+  &__input{
+    @apply w-full;
+  }
+
+  &__input,.ant-input,
+  .ant-input-affix-wrapper {
+    @apply text-base bg-white py-2 px-4 border-2 border-stone-200 hover:border-sky-300 focus-within:ring-sky-400 focus-within:border-sky-400 focus-visible:outline-none rounded-full;
+  }
+
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    @apply border-sky-400;
+  }
+
+  .ant-input-affix-wrapper .anticon.ant-input-password-icon {
+    @apply text-slate-400 hover:text-slate-500;
+  }
+
+  .ant-form-item .ant-form-item-label >label {
+    @apply text-base;
+  }
+
+  &__avatar {
+    @apply rounded-full;
+  }
+}

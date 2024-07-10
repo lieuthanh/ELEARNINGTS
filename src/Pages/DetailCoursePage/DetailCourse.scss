@@ -1,0 +1,101 @@
+.detail {
+  @apply relative;
+
+  &-banner {
+    @apply absolute -z-10 top-0 left-0 w-full h-48 md:h-56 lg:h-64;
+
+    &::after {
+      @apply absolute content-[''] z-20 inset-0 bg-stone-800 bg-opacity-75;
+    }
+
+    &__img {
+      @apply w-full h-full object-cover object-center;
+    }
+  }
+
+  &-content {
+    @apply flex flex-wrap md:items-start md:flex-nowrap space-x-0 space-y-4 md:space-y-0 md:space-x-4 lg:space-x-16 py-4;
+  }
+
+  &-info {
+    @apply w-full md:w-3/5;
+  }
+
+  &-category {
+    @apply text-base font-medium tracking-widest text-sky-500 mb-1;
+  }
+
+  &-name {
+    @apply text-3xl font-medium mb-6;
+  }
+
+  &-overview {
+    @apply flex items-center mb-6;
+  }
+
+  &-des {
+    @apply text-base text-stone-700 text-justify;
+  }
+
+  &-review {
+    @apply bg-sky-50 p-6 rounded-xl mt-8;
+
+    &__title {
+        @apply font-semibold text-base text-stone-600;
+    }
+
+    &__list {
+        @apply mt-6;
+
+        > *:not(:first-child){
+            @apply border-t border-t-stone-200 pt-4 mt-4;
+        }
+    }
+
+    &__item {
+        @apply flex flex-col space-y-2;
+    }
+  }
+
+  &-visual {
+    @apply flex-auto rounded-xl overflow-hidden shadow-xl;
+  }
+
+  &-img {
+    @apply block w-full xl:h-60 lg:h-48 md:h-36 object-cover object-center bg-stone-100;
+  }
+
+  &-payment {
+    @apply flex flex-col space-y-6 p-6;
+  }
+
+  &-price {
+    @apply text-2xl font-semibold text-green-500;
+  }
+
+  &-include {
+    &__caption {
+        @apply text-lg font-semibold text-stone-800 mb-3;
+    }
+
+    &__col {
+        @apply flex flex-col space-y-2;
+    }
+
+    &__row {
+        @apply text-stone-600 font-medium flex items-center space-x-2;
+    }
+
+    &__icon {
+        @apply text-sky-800;
+    }
+  }
+
+  &-related {
+    @apply bg-sky-100 py-10 mt-20;
+  }
+
+  &-refer {
+    @apply mt-20;
+  }
+}

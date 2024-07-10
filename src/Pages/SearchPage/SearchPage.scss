@@ -1,0 +1,9 @@
+.search {
+    &-report {
+        @apply text-base font-semibold text-stone-600 mb-8 sm:mb-10 md:mb-12 lg:mb-14;
+    }
+
+    &-pagination {
+        @apply flex justify-center space-x-2;
+    }
+}

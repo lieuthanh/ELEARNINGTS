@@ -1,0 +1,21 @@
+.c-modal {
+  &__overlay {
+    @apply fixed inset-0 z-50 overflow-y-auto grid place-items-center bg-stone-600 bg-opacity-75 cursor-pointer;
+  }
+
+  &__wrapper {
+    @apply w-full md:w-2/3 lg:w-1/4 cursor-default bg-white p-2 rounded-xl shadow-lg overflow-hidden;
+  }
+
+  &__content {
+    @apply flex flex-col space-y-4;
+  }
+
+  &__animation {
+    @apply w-2/3 mx-auto;
+  }
+
+  &__text {
+    @apply text-xl text-center font-medium text-stone-800;
+  }
+}

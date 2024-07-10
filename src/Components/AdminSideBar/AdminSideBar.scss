@@ -1,0 +1,11 @@
+.c-admin {
+  &__sidebar {
+    li {
+      a {
+        &.active {
+          @apply bg-gray-100 dark:bg-gray-700;
+        }
+      }
+    }
+  }
+}

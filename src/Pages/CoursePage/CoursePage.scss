@@ -1,0 +1,17 @@
+.courses {
+  &-categories {
+    @apply hidden md:flex items-center justify-center space-x-2 md:space-x-4 lg:space-x-6 mb-8 sm:mb-10 md:mb-12 lg:mb-14;
+  }
+
+  &-category {
+    @apply block text-xs sm:text-sm font-medium text-stone-600 hover:text-sky-400 transition-all;
+
+    &--active {
+      @apply text-sky-500;
+    }
+  }
+
+  &-pagination {
+    @apply flex items-center space-x-2;
+  }
+}

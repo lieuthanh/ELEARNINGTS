@@ -1,0 +1,35 @@
+.studysystem {
+  @apply bg-sky-50;
+
+  &-list {
+    @apply flex flex-wrap;
+  }
+
+  &-item {
+    @apply p-8 md:w-1/3 flex flex-col text-center items-center;
+  }
+
+  &-content {
+    @apply relative bg-white px-6 pb-6 pt-24 rounded-lg shadow-xl;
+  }
+
+  &-label {
+    @apply absolute top-0 -translate-y-1/2 -translate-x-1/2 w-16 h-16 inline-flex items-center justify-center text-white rounded-full mb-5 flex-shrink-0 shadow-lg;
+  }
+
+  &-icon {
+    @apply w-9 h-9;
+  }
+
+  &-text {
+    @apply flex-grow;
+  }
+
+  &-caption {
+    @apply text-sky-700 text-2xl font-medium mb-3;
+  }
+
+  &-desc {
+    @apply leading-relaxed;
+  }
+}
