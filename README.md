@@ -1,5 +1,5 @@
 # Deploy Link:
-https://lieuthanh.github.io/ELEARNINGTS/
+[https://lieuthanh.github.io/ELEARNINGTS/](https://elearningts-hjtlya00n-lieuthanhs-projects.vercel.app/)
 
 # Task Divisions:
 https://docs.google.com/spreadsheets/d/1ytDv8OoPXPrphUoAnzaI050NPiUW6yT1YeLEj6V5yP0/edit?usp=sharing
